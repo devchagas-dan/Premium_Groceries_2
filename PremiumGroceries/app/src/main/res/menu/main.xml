@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/drop_home"
+        android:title="@string/home_n"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/drop_produtos"
+        android:title="@string/produtos_n"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/drop_carrinho"
+        android:title="@string/carrinho_n"
+        app:showAsAction="never" />
+</menu>

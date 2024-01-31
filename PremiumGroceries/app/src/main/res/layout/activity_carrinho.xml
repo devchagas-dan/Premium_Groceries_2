@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.CarrinhoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Seu conteúdo existente -->
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/carrinho"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/autour_one"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/teal_700"
+                android:textAlignment="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/list_carrinho"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Rodapé -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFE0C7"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/valor_da_compra"
+            android:textColor="@color/teal_700"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/_0"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

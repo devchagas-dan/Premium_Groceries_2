@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="169dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:padding="13dp"
+        android:hint="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/email_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/email_reg"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:padding="13dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/senha_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/senha_reg"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/key"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:padding="13dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/reg_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_reg"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:text="Registrar"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/entrada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Já tem conta?"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/entrada"
+        app:layout_constraintStart_toStartOf="@+id/reg_btn"
+        app:layout_constraintTop_toBottomOf="@+id/reg_btn" />
+
+    <TextView
+        android:id="@+id/entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="136dp"
+        android:text="Entre"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reg_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

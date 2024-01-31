@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "872998361835",
+    "project_id": "premium-groceries",
+    "storage_bucket": "premium-groceries.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872998361835:android:8a82549bfdb64fced8bcae",
+        "android_client_info": {
+          "package_name": "com.example.premiumgroceries"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Uxta6QVzCoZvClLJRqnTPKKOHqshWCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.CarrinhoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/carrinho"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/autour_one"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/teal_700"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:id="@+id/excluir"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Excluir todos"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp"
+                android:fontFamily="@font/autour_one"
+                android:textStyle="bold"
+                android:layout_marginLeft="160dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/carrinhoRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="528dp"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFE0C7"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/teal_700"
+            android:text="Esperamos que goste do"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="nosso aplicativo!!"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
